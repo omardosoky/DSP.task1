@@ -5,7 +5,7 @@ from helpers import read_file
 
 class toolBar(tk.Tk):
 	def __init__(self, master):
-		myFrame = tk.Frame(master)
+		myFrame = tk.Frame(master, bg="#dad7d7")
 		# open file button + the icon
 		self.openImg = tk.PhotoImage(file="images/folder1.png")
 		self.openButton = tk.Button(myFrame , image=self.openImg , command=self.printing,borderwidth=1)
